@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculate Pace</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <h1>Calculate Pace</h1>
+
+  <h2>Calculate Pace by Time</h2>
+  <form id="calculatePaceByTimeForm">
+    <label for="unitSystem">Unit System:</label>
+    <select id="unitSystem" name="unitSystem">
+      <option value="kilometers">Kilometers</option>
+      <option value="miles">Miles</option>
+    </select>
+    <label for="distance">Distance (km or miles):</label>
+    <input type="number" id="distance" name="distance" required>
+    <label for="minutesPace">Minutes:</label>
+    <input type="number" id="minutesPace" name="minutesPace" required>
+    <label for="secondsPace">Seconds:</label>
+    <input type="number" id="secondsPace" name="secondsPace" required>
+    <button type="submit">Calculate Pace</button>
+  </form>
+
+  <div id="result1"></div>
+
+  <h2>Calculate Pace by Total Minutes</h2>
+  <form id="calculatePaceByTotalMinutesForm">
+    <label for="totalDistance">Distance (km or miles):</label>
+    <input type="number" id="totalDistance" name="distance" required>
+    <label for="totalUnitSystem">Unit System:</label>
+    <select id="totalUnitSystem" name="unitSystem">
+      <option value="kilometers">Kilometers</option>
+      <option value="miles">Miles</option>
+    </select>
+    <label for="hours">Hours:</label>
+    <input type="number" id="hours" name="hours" required>
+    <label for="minutes">Minutes:</label>
+    <input type="number" id="minutes" name="minutes" required>
+    <label for="seconds">Seconds:</label>
+    <input type="number" id="seconds" name="seconds" required>
+    <button type="submit">Calculate Pace</button>
+  </form>
+
+  <div id="result2"></div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
